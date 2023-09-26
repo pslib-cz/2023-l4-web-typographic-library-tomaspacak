@@ -1,0 +1,48 @@
+/*imported font*/
+
+body { font-family: 'Courier New', Courier, monospace;}
+
+/*COLORS*/
+:root {
+    --headings: green;
+    --text: black;
+    --primarC: orange;
+}
+
+/*HEADINGS*/
+h1, h2, h3, h4, h5, h6 { font-weight: 600;}
+
+h1 { font-size: 36px;}
+h2 { font-size: 32px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 18px;}
+
+/*TEXT*/
+p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text);
+    margin: ;
+}
+b { font-weight: 500;}
+a{}
+small{}
+
+
+
+
+/*BUTTONS*/
+.button {
+    display: inline-block;
+    border: 2px solid var(--primarC);
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    color: var(--primarC);
+    font-weight: 500;
+}
+.button:hover {}
+.button--var2 {}
+
+
