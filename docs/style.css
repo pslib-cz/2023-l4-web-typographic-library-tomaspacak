@@ -25,12 +25,23 @@ p {
     font-size: 16px;
     color: var(--text);
     margin: ;
+    line-height: 1em;
 }
 b { font-weight: 500;}
-a{}
-small{}
+a {}
+/*i {}*/
+small { font-size: 14px;}
+mark { background-color: var(); padding: 0.2em; }
 
 
+/*LIST*/
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    padding: 0.5em 0;
+}
 
 
 /*BUTTONS*/
@@ -39,10 +50,29 @@ small{}
     border: 2px solid var(--primarC);
     border-radius: 2em;
     padding: 0.5em 1em;
-    color: var(--primarC);
+    font-size: 16px; /**/
     font-weight: 500;
 }
 .button:hover {}
-.button--var2 {}
+.button--var2 {
+    background-color: var(--primarC);
+}
+
+
+/*TABLES*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table thead, caption {
+    background-color: var(--primarC);
+    color: white;
+    text-align: center;
+}
+th, td {
+    border: 2px solid var();
+    padding: 1em;
+    text-align: left;
+}
 
 
