@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="web.css">
     <script src="hamburger.js"></script>
+    <link rel="icon" href="./img/favicon.png" type="image/png">
 </head>
 <body>
     <header>
         <div class="menu__menuDown">
             <div class="navbar">
-                <a href="./index.html" class="navbar__logo">ffffff</a>
+                <a href="./index.html" class="navbar__logo"><img src="./img/logo.svg" alt="logo"></a>
                 
                 <div class="hamburger-row">
                     <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
@@ -27,8 +28,8 @@
                         <li class="menuDown__item"><a href="#two">Text</a></li>
                         <li class="menuDown__item"><a href="#three">Lists</a></li>
                         <li class="menuDown__item"><a href="#four">Buttons</a></li>
-                        <li class="menuDown__item"><a href="#btn">Gallery</a></li>
-                        <li class="menuDown__item"><a href="#btn">Color pallete</a></li>
+                        <li class="menuDown__item"><a href="#five">Gallery</a></li>
+                        <li class="menuDown__item"><a href="#six">Color pallete</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,7 +38,7 @@
     <div class="pageWrapper">
         <main>
             <h1><span class="firstLetter">B</span>asics<span class="firstLetter">L</span>ibrary</h1>
-            <p>tohle je library</p>
+            <p>BasicLibrary is a typographic library with a slight overlap into CSS. Thanks to it you don't have to waste time with unnecessary text styling.</p>
             <a class="button" href="#">stáhnout</a>
         </main>
         <section id="one">
@@ -74,15 +75,14 @@
 
                 <h3>How install BasicLibrary</h3>
                 <ol>
-                    <li>download <a href="#">style.css</a></li>
-                    <li>add style.css to your project folder</li>
-                    <li>link style.css to html</li>
-                    <li>bbb</li>
+                    <li>Download file <a href="https://github.com/pslib-cz/2023-l4-web-typographic-library-tomaspacak/blob/master/docs/style.css">style.css</a></li>
+                    <li>Add style.css inside your project folder</li>
+                    <li>Link style.css file to every HTML page</li>
                 </ol>
             </div>
         </section>
     
-        <section id="btn">
+        <section id="four">
             <div class="section__wrapper">
                 <h2>Buttons</h2>
                 <p> You have a choice of two basic buttons with each plate also having a hover setting. You can see the buttons below this text.</p>
@@ -91,38 +91,52 @@
             </div>
         </section>
 
-        <section id="btn">
+        <section id="five">
             <div class="section__wrapper">
                 <h2>Gallery</h2>
                 <p> You have a choice of two basic buttons with each plate also having a hover setting. You can see the buttons below this text.</p>
                 <div class="gallery">
-                    <a class="gallery__item" href="#">
+                    <a class="gallery__item" href="./img/img1_big.png">
                         <figure>
-                            <img class="gallery__img" src="./img/img1.png" alt=".....">
-                            <figcaption>description</figcaption>
+                            <img class="gallery__img" src="./img/img1.webp" alt="photo of moutins in spring">
+                            <figcaption class="gallery__description">description</figcaption>
                         </figure>
                     </a>
-                    <a class="gallery__item" href="#">
+                    <a class="gallery__item" href="./img/img2_big.png">
                         <figure>
-                            <img class="gallery__img" src="./img/img1.png" alt=".....">
-                            <figcaption>description</figcaption>
+                            <img class="gallery__img" src="./img/img2.webp" alt="photo in forest">
+                            <figcaption class="gallery__description">description</figcaption>
+                        </figure>
+                    </a>
+                    <a class="gallery__item" href="./img/img3_big.png">
+                        <figure>
+                            <img class="gallery__img" src="./img/img3.webp" alt="photo of moutins with sun">
+                            <figcaption class="gallery__description">description</figcaption>
+                        </figure>
+                    </a>
+                    <a class="gallery__item" href="./img/img4_big.png">
+                        <figure>
+                            <img class="gallery__img" src="./img/img4.webp" alt="photo of flower">
+                            <figcaption class="gallery__description">description</figcaption>
                         </figure>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="btn">
+        <section id="six">
             <div class="section__wrapper">
                 <h2>Color pallete</h2>
                 <p> If you don't like the color palette, you can simply change it by overwriting :root in the style.css document and you're done.</p>
-                <div>
-                    <div></div>
+                <div class="colorPalet">
+                    <div class="colorPalet__item colorPalet__item--1"><p>#22643b</p></div>
+                    <div class="colorPalet__item colorPalet__item--2"><p>#138A36</p></div>
+                    <div class="colorPalet__item colorPalet__item--3"></div>
+                    <div class="colorPalet__item colorPalet__item--4"></div>
                 </div>
             </div>
         </section>
     </div>
-
-    <footer></footer>
+    <footer><p>Author: Tomáš Pacák</p></footer>
 </body>
 </html>
