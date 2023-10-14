@@ -33,4 +33,3 @@ For the gallery to work, you need to use the classes correctly. Example below.
 </div>
 ```
 
-
