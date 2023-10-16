@@ -1,22 +1,28 @@
 
-/*default text*/
+/*default font and text*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap'); /*imported font*/
-html { font-family: 'Roboto', Courier, monospace; color: var(--text); font-size: 16px;}
+html { 
+    font-family: 'Roboto', Courier, monospace; 
+    color: var(--text); 
+    font-size: 16px;
+    font-weight: 400;
+}
 
 /*COLORS*/
 :root {
-    --text: rgb(65, 65, 65);
+    --text: #414141;
     --primarC: #22643b;
     --btn: #138A36;
-    --btnBg: white;
     --btnHover: #2caa41;
+    --btnBg: white;
     --mark: #79b38f;
+    --imgDescr: #C5C5C5;
 }
 
 /*HEADINGS*/
 h1, h2, h3, h4, h5, h6 { font-weight: 600; color: var(--primarC);}
 
-h1 { font-size: 2em;}
+h1 { font-size: 2em; margin: 0.6em 0;}
 h2 { font-size: 1.7em; margin: 0.4em 0;}
 h3 { font-size: 1.5em; margin: 0.4em 0;}
 h4 { font-size: 1.4em; margin: 0.3em 0;}
@@ -25,7 +31,6 @@ h6 { font-size: 1.1em; margin: 0.3em 0;}
 
 /*TEXT*/
 p {
-    font-weight: 400;
     color: var(--text);
     margin: 0.7em 0;
     line-height: 1.4em;
@@ -67,30 +72,17 @@ section ul li::before {
     color: var(--btn);
     background-color: var(--btnBg);
 }
-.button:hover {background-color: var(--btn); color: var(--btnBg);}
+.button:hover {
+    background-color: var(--btn); 
+    color: var(--btnBg);}
 .button--2 {
     background-color: var(--btn);
     color: var(--btnBg);
 }
-.button--2:hover {background-color: var(--btnHover); border: 3px solid var(--btnHover);}
-
-
-/*TABLES*/
-table {
-    width: 100%;
-    border-collapse: collapse;
+.button--2:hover {
+    background-color: var(--btnHover); 
+    border: 3px solid var(--btnHover);
 }
-table thead, caption {
-    background-color: var(--primarC);
-    color: white;
-    text-align: center;
-}
-th, td {
-    border: 2px solid var();
-    padding: 1em;
-    text-align: left;
-}
-
 
 /*FLEX-GALLERY*/
 .gallery {
@@ -98,29 +90,26 @@ th, td {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
+    margin: 2em 0;
 }
 .gallery__item {
     position: relative;
     max-width: 500px;
     overflow: hidden;
 }
-figure{
-    margin: 0;
-}
-.gallery__description {                                               /*ELEMENTY DĚLAT POMOCÍ CLASS!!!!!!!*/
+figure{margin: 0;}
+.gallery__description {                                               
     display: block;
     position: absolute;
     bottom: 0;
     padding: 1em;
-    /*background-color: var(--primarC);*/
-    color: rgb(197, 197, 197);
-    
+    color: var(--imgDescr);
 }
 .gallery__img:hover {
     transform: scale(1.1);
     transition: 1s;
 }
-.gallery__img { transition: 0.5s;}
+.gallery__img {transition: 0.5s;}
 
 /*img*/
 img {width: 100%; display: block;}
