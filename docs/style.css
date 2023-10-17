@@ -49,8 +49,12 @@ ul, ol {
 li {
     padding: 0;
     margin-left: 1.8em;
+    line-height: 1.2em;
 }
-section ul li { list-style-type: none; margin-left: 1.1em; height: 1em;}  /*Přetékaá!!!*/
+ul li { 
+    list-style-type: none; 
+    margin-left: 1.1em;
+}
 section ul li::before {
     content: "•";
     color: var(--primarC); 

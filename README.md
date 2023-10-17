@@ -11,6 +11,23 @@ Proper implementation is required for the BasicLibrary to work (instructions bel
 3. Link style.css file to every HTML page
 ## Usage
 After you have successfully implemented style.css, you can use BasicLibrary. Which automatically sets the text style for which no classes are required. You just need to use tags (p, b, mark, i, h1 - h6,...) for components you need to use predefined classes, more about components below. You can also take a look at **[demo site](https://pslib-cz.github.io/2023-l4-web-typographic-library-tomaspacak/)** that uses BasicLibrary.
+### Lists
+#### Bulleted list
+```html
+<ul>
+    <li>easy implementation</li>
+    <li>user-friendly</li>
+    <li>saves time</li>
+</ul>
+```
+#### Numbered list
+```html
+<ol>
+    <li>Download file style.css</li>
+    <li>Add style.css inside your project folder</li>
+    <li>Link style.css file to every HTML page</li>
+</ol>
+```
 ## Components
 ### Buttons
 For buttons is used class .button. If you are not satisfied with the default design you can use the button class with the .button--2 class, for the second button design to work properly you need to use the button class as well. You can see examples below.

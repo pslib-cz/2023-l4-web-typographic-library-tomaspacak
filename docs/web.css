@@ -47,7 +47,7 @@ main p {max-width: 32em; text-align: left; position: relative; transform: transl
 .colorPalet__item {
     display: block;
     background-color: var(--primarC);
-    color: white;
+    color: var(--btnBg);
     padding: 2em;
 }
 .colorPalet__item p {color: var(--btnBg);}
@@ -119,12 +119,12 @@ main p {max-width: 32em; text-align: left; position: relative; transform: transl
 @media screen and (max-width: 768px) { 
     .hamburger-row {
         position: relative;
-        z-index: 1;
+        z-index: 2;
     }
     .menuDown__item a {
         display: block;
         padding: 1em 1.5em;
-        color: white;    /*color*/
+        color: var(--btnBg);   
         text-decoration: none;
         font-size: 18px;
         font-weight: 500;
@@ -142,13 +142,8 @@ main p {max-width: 32em; text-align: left; position: relative; transform: transl
         right: 0;
         background-color: var(--primarC);
         width: 13em;
-        /*display: block;*/
-        z-index: 0;
+        z-index: 1;
     }
-    .hamburger-nav li:active {
-        background-color: var(--secondColor);           /*ffffffffffff*/
-    }
-
     .hamburger.active  span:nth-child(1) {
         transition: 0.5s;
         rotate: 45deg;
@@ -196,15 +191,10 @@ main p {max-width: 32em; text-align: left; position: relative; transform: transl
        height: fit-content;
     }
     .menuDown__item a:hover {
-        /*background-color: rgba(0, 0, 0, 0);*/
         transform: scale(1.05);
         transition: .2s;
         color: var(--btn);
     }
-    /*.hamburger-nav li a:focus {
-        border-bottom: 4px solid #F5841F;
-    }*/
-    
     
     .pageWrapper {
         margin: 0;
@@ -214,9 +204,5 @@ main p {max-width: 32em; text-align: left; position: relative; transform: transl
         margin-right: auto;
         margin-left: auto;
         margin-top: 3em;
-        /*position: relative;
-        transform: translate(-50%, 0%);
-        left: 50%;
-        max-width: 1200px;*/
     }
 }
